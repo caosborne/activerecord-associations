@@ -8,10 +8,16 @@ require_relative 'models/theater_movie.rb'
 
 ActiveRecord::Base.establish_connection(
   adapter:  'postgresql',
-  database: 'devflix',
+  database: 'devflix1',
   host:     'localhost'
 )
 
+
+puts Movie.all
+
+
 binding.pry
+
+
 
 puts "Goodbye!"
